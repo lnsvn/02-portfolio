@@ -1,14 +1,17 @@
 * {
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
     background-color: #f4f2e6;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
     padding: 5px;
-    font-family: Arial, Helvetica, sans-serif;
     background-color: #85abad;
 }
 
@@ -25,7 +28,6 @@ body {
     padding-top: 25px;
     margin-right: 30px;
     font-size: 25px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .header nav ul li {
@@ -59,33 +61,85 @@ body {
 .resume {
     color: #293c3d;
     display: flex;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
-.about-me h2,
-.work h2,
-.contact-me h2, 
-.resume h2 {
+h2 {
     font-size: 50px;
-    margin-right: 40px;
-    float: left;
-    margin: 30px;
-    display:flex;
+    float: right;
+    margin: 20px;
+    padding: 20px;
+    padding-left: 25px;
+    border-right: 5px solid #293c3d;
+    width: 25%;
+    text-align: right;
 }
 
 p {
     font-size: 20px;
     margin-top: 10px;
+    padding-top: 30px;
+    padding-left: 20px;
+    line-height: 2;
+}
+
+.prework-study-guide-img {
+    height: 500px;
+    width: 325px;
+    margin-bottom: 30px;
+    border: 3px solid #a1882b;
+    border-radius: 4px;
+}
+
+.work ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.placeholder-img,
+.placeholder-img2 {
+    background-color: #fff;
+    width: 130px;
     padding: 20px;
+    height: 240px;
+    border: 3px solid #a1882b;
+    border-radius: 4px;
+    margin: 5px;
+    margin-top: 32px;
 }
 
 .contact-me ul li {
     list-style-type: none;
     display: inline-block;
     margin: 20px;
+    margin-top: 10px;
+    padding-top: 30px;
     font-size: 20px;
 }
 
 .contact-me a {
     color: #293c3d;
 }
+
+/* tablets 992px */
+@media screen and (max-width: 992px) {
+    .about-me, .work, .contact-me, .resume {
+        flex-wrap: wrap;
+    }
+}
+
+/* large smart phones 768px */
+@media screen and (max-width: 768px) {
+    .header, .content {
+        flex-direction: column;
+    }
+}
+
+/* small smart phones 576px */
+@media screen and (max-width: 576px) {
+    h2 {
+        border-bottom: 5px solid #293c3d;
+    }
+}
+    
+
