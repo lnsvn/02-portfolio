@@ -47,10 +47,11 @@ body {
     height: 200px;
     width: 100%;
     background-image: url(../images/background-img.jpg);
+    margin-bottom: 30px;
 }
 
 .content {
-    width: 80%;
+    width: 95%;
     display: inline-block;
     margin-left: 30px;
 }
@@ -65,13 +66,17 @@ body {
 
 h2 {
     font-size: 50px;
-    float: right;
+    padding: 15px;
     margin: 20px;
-    padding: 20px;
-    padding-left: 25px;
     border-right: 5px solid #293c3d;
-    width: 25%;
+    width: 20%;
     text-align: right;
+}
+
+.about-me-text {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
 }
 
 p {
@@ -80,6 +85,7 @@ p {
     padding-top: 30px;
     padding-left: 20px;
     line-height: 2;
+    display: flex;
 }
 
 .prework-study-guide-img {
@@ -121,24 +127,84 @@ p {
     color: #293c3d;
 }
 
-/* tablets 992px */
+footer {
+    background-color: #85abad;
+    padding: 30px; /* adds padding to footer */
+    clear: both; /* floating elements are not allowed to float on both sides */
+    font-family: Arial, Helvetica, sans-serif; /* sets the font style of the footer */
+    text-align: center;
+}
+
+h3 {
+    color: #f4f2e6;
+    background-color: #47696b;
+    font-size: 19px;
+}
+
+/* small computers 992px */
 @media screen and (max-width: 992px) {
     .about-me, .work, .contact-me, .resume {
         flex-wrap: wrap;
     }
-}
-
-/* large smart phones 768px */
-@media screen and (max-width: 768px) {
-    .header, .content {
+    .resume, .contact-me{
         flex-direction: column;
+    }
+    .about-me h2, .contact-me h2, .resume h2 {
+        border-right: 0px;
+        border-bottom: 5px solid #293c3d;
+        text-align: center;
+    }
+    .resume p, .contact-me ul {
+        padding: 10px 0px 20px 30px;
+        margin: 0px;
+    }
+    .contact-me ul li {
+        padding: 0px;
+        margin: 0px 10px 0px 10px;
     }
 }
 
-/* small smart phones 576px */
-@media screen and (max-width: 576px) {
-    h2 {
+/* tablets 768px */
+@media screen and (max-width: 768px) {
+    .header, .content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .work h2 {
+        border-right: 0px;
         border-bottom: 5px solid #293c3d;
+    }
+    .work {
+        display: flex;
+        flex-direction: column;
+    }
+    .work ul {
+        display: flex;
+        flex-direction: row;
+        padding: 0px;
+    }
+    p {
+        padding: 20px 0px 0px 0px
+    }
+}
+
+/* smart phones 390px */
+@media screen and (max-width: 390px) {
+    h2 {
+        width: 90%;
+        text-align: center;
+    }
+    .header {
+        height: 330px;
+        padding: 0px;
+    }
+    .header nav {
+        padding: 0px;
+    }
+    .header nav ul li {
+        display: flex;
+        flex-direction: column;
     }
 }
     
