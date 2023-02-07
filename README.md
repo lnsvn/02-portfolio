@@ -41,7 +41,7 @@ The finished site at 768px viewport:
 The finished site at 390px viewport:
 ![alt text](assets/images/390.png)
 
-The finished site link:
+The finished site link: https://lnsvn.github.io/02-advanced-css/
 
 
 ## Credits
