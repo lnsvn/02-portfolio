@@ -17,15 +17,36 @@ N/A
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+This site contains portfolio information pertaining to me. To view the main set of information, you can either scroll down on the page, or you can click the four header navigation links to take you directly to the information you need as pictured here:
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
+Nav Links:
+![alt text](assets/images/nav.png)
 
-![alt text](assets/images/screenshot.png)
+Information:
+![alt text](assets/images/about-me.png)
+![alt text](assets/images/work.png)
+![alt text](assets/images/contact-me.png)
+
+The Contact Me section has working links.
+
+The finished site image at stardard viewport:
+![alt text](assets/images/standard.png)
+
+The finished site at 992px viewport:
+![alt text](assets/images/992.png)
+
+The finished site at 768px viewport:
+![alt text](assets/images/768.png)
+
+The finished site at 390px viewport:
+![alt text](assets/images/390.png)
+
+The finished site link:
+
 
 ## Credits
 
-N/A
+The background image, named background-img.jpg, is a photo that I have taken and edited myself. 
 
 ## License
 
