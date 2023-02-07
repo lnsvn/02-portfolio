@@ -1,147 +1,176 @@
-* {
-    margin: 0;
-    box-sizing: border-box;
+/* variables */
+:root {
+    --light-tan: #f4f2e6;
+    --sage: #85abad;
+    --dark-green: #293c3d;
+    --med-tan: #a1882b;
+    --dark-sage: #47696b;
 }
+
+/* applies to all classes unless specifies otherwise */
+* {
+    margin: 0; /* adds no margin */
+    box-sizing: border-box; /* padding and border are included in the width and height of all elements */
+}
+
+/* Start Body */
 
 body {
-    background-color: #f4f2e6;
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    flex-direction: column;
+    background-color: var(--light-tan); /* changes the background color of the entire page */
+    font-family: Arial, Helvetica, sans-serif; /* sets all text to this font type */
+    display: flex; /* turns this element into a flexbox */
+    flex-direction: column; /* stacks the child elements */
 }
 
+/* Start Header */
+
 .header {
-    padding: 5px;
-    background-color: #85abad;
+    padding: 5px; /* adds padding to header */
+    background-color: var(--sage); /* sets the header background color */
 }
 
 .header h1 {
-    display: inline-block;
-    font-size: 50px;
-    color: #f4f2e6;
-    background-color: #47696b;
-    padding: 10px;
+    display: inline-block; /* displays h1 on the same line as the nav bar */
+    font-size: 50px; /* sets h1 font size */
+    color: var(--light-tan); /* sets the h1 text color */
+    background-color: var(--dark-sage); /* sets h1 background color */
+    padding: 10px; /* adds padding to h1 */
 }
 
 .header nav {
-    float: right;
-    padding-top: 25px;
-    margin-right: 30px;
-    font-size: 25px;
+    float: right; /* displays the nav to the right side of the header */ 
+    padding-top: 25px; /* adds padding to the top of the nav */
+    margin-right: 30px; /* adds margin to the right of the nav */
+    font-size: 25px; /* sets the font size of the nav bar */
 }
 
 .header nav ul li {
-    list-style-type: none;
-    display: inline-block;
-    margin-left: 15px;
+    list-style-type: none; /* removes bullets from li */
+    display: inline-block; /* displays nav bar on the same line as h1 */
+    margin-left: 15px; /* adds margin to the left of the li */
 }
 
 .header a {
-    text-decoration: none;
-    color: #f4f2e6;
-    background-color: #5c878a;
-    padding: 10px;
+    text-decoration: none; /* removes underline from links in header */
+    color: var(--light-tan); /* sets the text color of the link elements */
+    background-color: #5c878a; /* sets the background color of the link elements */
+    padding: 10px; /* adds padding to the link elements */
 }
+
+/* End Header */
+
+/* Image */
 
 .back-img{
-    height: 200px;
-    width: 100%;
-    background-image: url(../images/background-img.jpg);
-    margin-bottom: 30px;
+    height: 200px; /* sets the height of the background image */
+    width: 100%; /* sets the width of the image to the width of the page */
+    background-image: url(../images/background-img.jpg); /* links the image with the page */
+    margin-bottom: 30px; /* adds margin to the bottom of the image */
 }
 
+/* Start Main */
+
 .content {
-    width: 95%;
-    display: inline-block;
-    margin-left: 30px;
+    width: 95%; /* sets the width of the content on the page to display on 95 % of the page */ 
+    margin-left: 30px; /* adds margin to the left of the content */
 }
 
 .about-me, 
 .work, 
 .contact-me, 
 .resume {
-    color: #293c3d;
-    display: flex;
+    color: var(--dark-green); /* sets the text color of the different sections */
+    display: flex; /* turns these sections into flexboxes */
 }
 
 h2 {
-    font-size: 50px;
-    padding: 15px;
-    margin: 20px;
-    border-right: 5px solid #293c3d;
-    width: 20%;
-    text-align: right;
+    font-size: 50px; /* sets the font size of h2 */
+    padding: 15px; /* adds padding to h2 */
+    margin: 20px; /* adds margin to h2 */
+    border-right: 5px solid var(--dark-green); /* adds a border to the right of h2 and declares its size, type, and color */
+    width: 20%; /* sets the width of h2 to 20% of the page */
+    text-align: right; /* aligns the text to the right side of the page */
 }
 
 .about-me-text {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 30px;
+    display: flex; /* turns the text section into a flexbox */
+    flex-direction: column; /* stacks the separate paragraphs */
+    margin-bottom: 30px; /* adds margin to the bottom of the text section */
 }
 
 p {
-    font-size: 20px;
-    margin-top: 10px;
-    padding-top: 30px;
-    padding-left: 20px;
-    line-height: 2;
+    font-size: 20px; /* sets the font size of the p element */
+    margin-top: 10px; /* adds margin on top of the p element */
+    padding-top: 30px; /* adds padding on top of the p element */
+    padding-left: 20px; /* adds padding to the left of the p element */
+    line-height: 2; /* sets the distance between lines of text */
     display: flex;
+    /* turns the p elements into flexboxes */
 }
 
 .prework-study-guide-img {
-    height: 500px;
-    width: 325px;
-    margin-bottom: 30px;
-    border: 3px solid #a1882b;
-    border-radius: 4px;
+    height: 500px; /* sets the image height */
+    width: 325px; /* sets the image width */
+    margin-bottom: 30px; /* adds margin to the bottom of the image */
+    border: 3px solid var(--med-tan); /* adds a border around the image and declares its size, type, and color */
+    border-radius: 4px; /* rounds the corners of the image's outer border edge */
 }
 
 .work ul li {
-    list-style: none;
-    display: flex;
-    align-items: center;
+    list-style: none; /* removes the bullet points from the li */
+    display: flex; /* turns the li into a flexbox */
+    align-items: center; /* the flexbox items are aligned at the center of the cross axis */
 }
 
 .placeholder-img,
 .placeholder-img2 {
-    background-color: #fff;
-    width: 130px;
-    padding: 20px;
-    height: 240px;
-    border: 3px solid #a1882b;
-    border-radius: 4px;
-    margin: 5px;
-    margin-top: 32px;
+    background-color: #fff; /* sets the background color of the images */
+    width: 130px; /* sets the width of the images */
+    padding: 20px; /* adds padding to the images */
+    height: 240px; /* sets the height of the images */
+    border: 3px solid var(--med-tan); /* adds a border around the images and declares its size, type, and color */
+    border-radius: 4px; /* rounds the corners of the images' outer border edge */
+    margin: 5px; /* adds margin to the images */
+    margin-top: 32px; /* adds more margin on top of the images */
 }
 
 .contact-me ul li {
-    list-style-type: none;
-    display: inline-block;
-    margin: 20px;
-    margin-top: 10px;
-    padding-top: 30px;
-    font-size: 20px;
+    list-style-type: none; /* removes the bullet point from the li */
+    display: inline-block; /* displays the li horizontally */
+    margin: 20px; /* adds margin to the li */
+    margin-top: 10px; /* adds less margin to the top of the li */
+    padding-top: 30px; /* adds padding to the top of the li */
+    font-size: 20px; /* sets the font size of the li */
 }
 
 .contact-me a {
-    color: #293c3d;
+    color: var(--dark-green); /* sets the text color of the link elements */
 }
 
+/* End Main */
+
+/* Start Footer */
+
 footer {
-    background-color: #85abad;
+    background-color: var(--sage); /* sets the background color of the footer */
     padding: 30px; /* adds padding to footer */
     clear: both; /* floating elements are not allowed to float on both sides */
-    font-family: Arial, Helvetica, sans-serif; /* sets the font style of the footer */
-    text-align: center;
+    text-align: center; /* aligns the text to the center of the footer */
 }
 
 h3 {
-    color: #f4f2e6;
-    background-color: #47696b;
-    font-size: 19px;
+    color: var(--light-tan); /* sets the text color of h3 */
+    background-color: var(--dark-sage); /* sets the background color of h3 */
+    font-size: 19px; /* sets the font size of h3 */
 }
 
-/* small computers 992px */
+/* End Footer */
+
+/* End Body */
+
+/* Below are media queries. These apply CSS only when the browser and device environment matches a rule that is specified. */
+
+/* small computer screens 992px */
 @media screen and (max-width: 992px) {
     .about-me, .work, .contact-me, .resume {
         flex-wrap: wrap;
@@ -164,7 +193,7 @@ h3 {
     }
 }
 
-/* tablets 768px */
+/* tablet screens 768px */
 @media screen and (max-width: 768px) {
     .header, .content {
         display: flex;
@@ -189,7 +218,7 @@ h3 {
     }
 }
 
-/* smart phones 390px */
+/* smart phone screens 390px */
 @media screen and (max-width: 390px) {
     h2 {
         width: 90%;
@@ -208,4 +237,3 @@ h3 {
     }
 }
     
-
