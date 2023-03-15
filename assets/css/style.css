@@ -116,6 +116,14 @@ p {
     border-radius: 4px; /* rounds the corners of the image's outer border edge */
 }
 
+.poke-img{
+    height: 200px;
+    width: 400x;
+    margin: 50px;
+    border: 3px solid var(--med-tan); /* adds a border around the image and declares its size, type, and color */
+    border-radius: 4px; /* rounds the corners of the image's outer border edge */
+}
+
 .work ul li {
     list-style: none; /* removes the bullet points from the li */
     display: flex; /* turns the li into a flexbox */
