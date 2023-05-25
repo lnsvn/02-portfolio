@@ -116,7 +116,8 @@ p {
     border-radius: 4px; /* rounds the corners of the image's outer border edge */
 }
 
-.poke-img{
+.poke-img,
+.castles-img {
     height: 200px;
     width: 400x;
     margin: 50px;
